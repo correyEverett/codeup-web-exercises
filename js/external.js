@@ -69,7 +69,8 @@ console.log("Hello from external JavaScript");
         var offerNotExpired = confirm('Is the offer valid?');
         var isPremiumMember = confirm('Are you a premium member?');
 
-        var discountApplied
+        var discountApplied = offerIsValid && (isPremiumMember || numberOfItems > 2);
+        alert("Product discount: " + discountApplied);
 
 
 
