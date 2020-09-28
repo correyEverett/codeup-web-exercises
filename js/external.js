@@ -29,8 +29,8 @@ console.log("Hello from external JavaScript");
         var littleMermaid = Number(prompt('How many days will you be renting The Little Mermaid?'));
         var brotherBear = Number(prompt('How many days will you be renting Brother Bear'));
         var hercules = Number(prompt('How many days will you be renting Hercules?'));
-        var total = alert(littleMermaid + brotherBear + hercules) * movieCostPerDay;
-        console.log('Your movie rental cost are:' + total.toFixed(2));
+        var total = (littleMermaid + brotherBear + hercules) * movieCostPerDay;
+        alert('Your movie rental cost is $' + total.toFixed(2));
 
 //     2. Suppose you're working as a contractor for 3 companies: Google, Amazon and Facebook, they pay you a different
 //     rate per hour. Google pays $400, Amazon $380, and Facebook $350. How much will you receive in payment for this
@@ -48,18 +48,20 @@ console.log("Hello from external JavaScript");
        var amazonPay = (amazonRate * amazonHours);
        var facebookPay = (facebookRate * facebookHours);
 
-       console.log(googlePay);
-       console.log(amazonPay);
-       console.log(facebookPay);
+       alert('Expect to be paid $' + googlePay + ' from Google');
+       alert('Expect to be paid $' + amazonPay + ' from Amazon');
+       alert('Expect to be paid $' + facebookPay + ' from Facebook');
+
+       alert('From each of the companies combined, you\'ve earned $' + (googlePay + amazonPay + facebookPay));
 
 //     3. A student can be enrolled in a class only if the class is not full and the class schedule does not conflict with
 //     her current schedule.
 
-       var classIsNotFull = confirm('Class is not full');
-       var classScheduleDoesNotConflict = confirm('Schedules do not conflict');
-       var studentEnrolled = classIsNotFull && classScheduleDoesNotConflict;
-       var alertMessage = 'Student enrolled: ' + studentEnrolled;
-       alert(alertMessage);
+       var classIsNotFull = confirm('The class is not full?');
+       var noScheduleConflict = confirm('There are no scheduling conflicts');
+       var studentEnrolled = classIsNotFull && noScheduleConflict;
+
+       alert('Student will be enrolled: ' + studentEnrolled);
 
 
 //     4. A product offer can be applied only if a person buys more than 2 items, and the offer has not expired.
@@ -69,7 +71,7 @@ console.log("Hello from external JavaScript");
         var offerNotExpired = confirm('Is the offer valid?');
         var isPremiumMember = confirm('Are you a premium member?');
 
-        var discountApplied = offerIsValid && (isPremiumMember || numberOfItems > 2);
+        var discountApplied = offerNotExpired && (isPremiumMember || numberOfItems > 2);
         alert("Product discount: " + discountApplied);
 
 
