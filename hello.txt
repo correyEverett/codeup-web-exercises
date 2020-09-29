@@ -2,3 +2,19 @@ Random
 Hello
 Something
 Assignment
+
+***************************************
+29SEP2020 INTRODUCTION TO GIT BRANCHING
+***************************************
+
+1. git branch
+// shows a list of locally available branches.
+
+2. git checkout -b “name of your choice”
+// creates new branch and also checks it out .
+
+3. git checkout “branch name”
+// checkout existing branch.
+
+4. git push origin “branch name”
+// pushes to branch
