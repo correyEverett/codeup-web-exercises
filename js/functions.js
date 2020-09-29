@@ -115,7 +115,7 @@ alert('Your tip amount should be $' + (bill * (tip / 100)).toFixed(2));
 
 function applyDiscount(price, discountPercentage) {
     var discount = price * (discountPercentage / 100);
-    return price - discount;
+    return (price - discount).toFixed(2);
 }
 
 var newPrice = applyDiscount(100, 15);
