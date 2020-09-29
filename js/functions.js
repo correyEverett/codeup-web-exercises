@@ -1,5 +1,5 @@
 "use strict";
-
+(function () {
 /**
  * TODO:
  * Create a function called 'sayHello' that takes a parameter 'name'.
@@ -33,6 +33,9 @@ console.log(helloMessage);
  * variable to the 'sayHello' function. You should see the same output in the
  * console.
  */
+
+var myName = 'Correy';
+sayHello(myName);
 
 // Don't modify the following line, it generates a random number between 1 and 3
 // and stores it in a variable named random
@@ -117,3 +120,5 @@ function applyDiscount(price, discountPercentage) {
 
 var newPrice = applyDiscount(100, 15);
 console.log(newPrice);
+
+})();
