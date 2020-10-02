@@ -210,33 +210,13 @@ function add100(submittedNumber) {
 
 
 var wouldLikeNumber = confirm('Would you like to enter a number?');
-
-if(wouldLikeNumber === false) {
-    alert('Maybe next time!');
-
-
-
-} else {
-    var submittedNumber = Number(prompt('Please enter the number you would like.'));
-    if (submittedNumber === 'NaN') {
-        alert('What you\'ve entered is not a number.');
-    } else {
-
-        if(submittedNumber % 2 === 0) {
-            alert('Congratulation, you have selected an EVEN number!');
-        } else {
-            alert('Congratulations, you have selected an ODD number!');
-        }
-        if(submittedNumber === true) {
-            alert(submittedNumber + 100);
-        }
-        if(submittedNumber > 0) {
-            alert('Congratulations, you have selected a POSITIVE number!');
-        } else if(submittedNumber < 0) {
-            alert('Congratulations, you have selected a NEGATIVE number!');
-        } else {
-            alert('For some strange reason you have selected 0');
-        }
+var submittedNumber = Number(prompt('Please enter the number you would like.'));
+if(submittedNumber === true) {
+    if(typeof submittedNumber === 'number') {
+        alert(isEven());
+        alert(add100());
+        alert(isPositive());
+    }  else {
+        alert(isANumber());
     }
-
 }
