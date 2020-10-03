@@ -16,6 +16,7 @@ function  isEven(input){
         }
         if(usersNumber === i){
             console.log('Yikes! Skipping number:' + i);
+            continue;
         }
         console.log('Here is an ODD number:' + i);
     }
@@ -24,11 +25,13 @@ function  isEven(input){
 
 //TODO  3.  Use a loop and the continue statement to output all the odd numbers between 1 and 50, except for the number the user entered.
 
-// for(i = 1; i < 51; i++){
-//     if(i % 2 !== 1){
-//         continue;
-//     } else {
-//         console.log(userNumber);
-//     }
-//     console.log(i);
-// }
+for (var i = 1; i < 51; i++){
+    if (isEven(i)) {
+        continue;
+    }
+    if(usersNumber === i){
+        console.log('');
+        continue;
+    }
+    console.log('Here is an ODD number:' + i);
+}
