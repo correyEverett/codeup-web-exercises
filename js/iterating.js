@@ -69,15 +69,15 @@
      */
 
 
-    function returnFirst(name){
+    function returnFirst(arr){
         return names[0];
     }
 
-    function returnSecond(name){
+    function returnSecond(arr){
         return names[1];
     }
 
-    function returnLast(name){
+    function returnLast(arr){
         return names[names.length - 1]
     }
 
