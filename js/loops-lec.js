@@ -120,12 +120,12 @@
 
 //TODO: Create a do-while loop that prompts the user for a color and continues to prompt until the string passed is "blue"
 
-do{
-   var userColor = prompt('Please enter the color of your choice.').toLowerCase();
-
-}while(userColor !== 'blue');
-
-alert('Cool, that\'s my favorite COLOR too!')
+// do{
+//    var userColor = prompt('Please enter the color of your choice.').toLowerCase();
+//
+// }while(userColor !== 'blue');
+//
+// alert('Cool, that\'s my favorite COLOR too!')
 /*********************************************
  *               FOR LOOPS
  *********************************************/
@@ -140,25 +140,42 @@ alert('Cool, that\'s my favorite COLOR too!')
 
 // TODO TOGETHER: Write a for loop that loops through numbers 0 - 5 (inclusive);
 
+// for(var i = 0; i < 6; i++){
+//    console.log(i);
+// }
 
 // TODO TOGETHER: Why are loops beneficial?
 
 
 // TODO TOGETHER: Console.log each color from the array randomColors
 //  var randomColors = ["red","orange","yellow","blue","green"]
-
-
+//
+//
 // for (var i = 0; i < randomColors.length; i++){
-// 	console.log(randomColors[i]);;
+// 	console.log(randomColors[i]);
 // }
 
 
 
 // TODO TOGETHER: Using a for loop, log all even numbers 0 - 100;
 
+// for(var i = 0; i < 101; i += 2){
+//    console.log(i);
+// }
+//
+// for(var i = 0; i < 101; i++){
+//    if(i % 2 === 0){
+//       console.log(i);
+//    }
+// }
 
 // TODO: Using a for loop, log all numbers divisible by 5, from 0 - 100;
 
+// for(var i = 0; i < 101; i++){
+//    if(i % 5 === 0){
+//       console.log(i);
+//    }
+// }
 
 // TODO: Using a for loop, complete the FizzBuzz challenge:
 //  Your program should count up to 100.
@@ -167,6 +184,17 @@ alert('Cool, that\'s my favorite COLOR too!')
 //  If divisible by 3 and 5, log "FizzBuzz"
 //  All other cases, just log the number.
 
+// for(var i = 0; i < 101; i++){
+//    if(i % 3 === 0 && i % 5 === 0){
+//       console.log('FizzBuzz');
+//    } else if(i % 3 === 0){
+//       console.log('Fizz');
+//    } else if(i % 5 === 0){
+//       console.log('Buzz');
+//    } else {
+//       console.log(i);
+//    }
+// }
 
 
 /*********************************************
@@ -174,29 +202,30 @@ alert('Cool, that\'s my favorite COLOR too!')
  *********************************************/
 // We can get a loop to stop using break;
 
-// var numberToStopAt = 5;
-//
-// for (var i = 1; i < 100; i++) {
-//
-// 	console.log('Loop counter is: ' + i);
-//
-// 	if (i === numberToStopAt) {
-// 		console.log('We have reached the stopping point: break!');
-// 		// use the break keyword to exit from the while loop
-// 		break;
-// 		// nothing after the break will get processed
-// 		console.log('You will never see this line.');
-// 	}
-// }
+var numberToStopAt = 5;
+
+for (var i = 1; i < 100; i++) {
+
+	console.log('Loop counter is: ' + i);
+
+	if (i === numberToStopAt) {
+		console.log('We have reached the stopping point: break!');
+		// use the break keyword to exit from the while loop
+		break;
+		// nothing after the break will get processed
+		console.log('You will never see this line.');
+	}
+}
 
 
 // We can get an iteration to skip using continue;
+
 // for (var i = 1; i < 100; i++) {
 //
 // 	if (i % 2 !== 0) {
 // 		// skipping all odd numbers;
 // 		continue;
 // 	}
-//
-// 	console.log('Here is a lovely even number: ' + i);
+//    console.log('');
+//    console.log('Here is a lovely even number: ' + i);
 // }
