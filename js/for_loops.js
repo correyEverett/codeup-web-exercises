@@ -1,4 +1,6 @@
+
 //TODO 1. Create a file named for_loops.js inside the js directory and link it to your loops.html file.
+
 
 //TODO 2. Create a function named showMultiplicationTable that accepts a number and console.logs the multiplication table for that number (just multiply by the numbers 1 through 10)
 
@@ -16,7 +18,9 @@ showMultiplicationTable(5);
 
 //TODO 3. Use a for loop and the code from the previous lessons to generate 10 random numbers between 20 and 200 and output to the console whether each number is odd or even. For example:
 
+
 for(let i = 1, n = Math.floor(Math.random() * 180 +20);  i <= 10; i++, n++) {
+
 
     if(n % 2 === 0) {
         console.log(n + ' is even.');
@@ -36,6 +40,7 @@ for(let i = 1, n = Math.floor(Math.random() * 180 +20);  i <= 10; i++, n++) {
 // 7777777
 // 88888888
 // 999999999
+
 
 for(let i = 1; i <= 9; i++) {
     console.log(i.toString().repeat(i));
