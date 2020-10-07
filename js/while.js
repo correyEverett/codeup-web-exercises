@@ -2,12 +2,12 @@
 
 //TODO  2. Create a while loop that uses console.log() to create the output shown below.
 
-// var i = 2;
-//
-// while(i <= 65536){
-//     console.log(i);
-//     i *= 2 ;
-// }
+var i = 2;
+
+while(i <= 65536){
+    console.log(i);
+    i *= 2 ;
+}
 
 /****** DO WHILE LOOP ******/
 
@@ -22,22 +22,13 @@ do{
 
     var individualPurchases = Math.floor(Math.random() * 5) + 1;
     console.log('You just sold ' + individualPurchases + ' Cone(s)!');
-    allCones -= individualPurchases;
-    console.log('You have ' + allCones + ' left' );
 
-
-    if(allCones === 0){
-        console.log('Yay! I sold them all!');
-    } else if(individualPurchases > allCones) {
-        console.log('I can\'t sell you ' + individualPurchases + ' cones, I only have ' + allCones + ' left!');
-        continue;
+    if(individualPurchases > allCones) {
+        console.log('I can\'t sell you ' + individualPurchases + ' cone(s), I only have ' + allCones + ' left!');
+    } else {
+        allCones -= individualPurchases;
+        console.log('You have ' + allCones + ' left' );
     }
-
 }while(allCones > 0);
 
-
-// function caseTest(input){
-//     return input === input.toUpperCase() || input === input.toLowerCase();
-// }
-//
-// console.log(caseTest('rock'));
+console.log('Yay! I sold them all!');
