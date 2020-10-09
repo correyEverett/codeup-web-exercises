@@ -12,6 +12,15 @@
      *  > console.log(person.lastName) // "Sanchez"
      */
 
+    // var person = {
+    //     firstName: 'Correy',
+    //     lastName: 'Everett'
+    // };
+    //
+    // console.log(person.firstName);
+    // console.log(person.lastName);
+
+
     /**
      * TODO:
      * Add a sayHello method to the person object that returns a greeting using
@@ -21,6 +30,13 @@
      * Example
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
+
+
+        // person.sayHello = function(){
+        //     return ('Hello ' + this.firstName + ' ' + this.lastName);
+        // }
+        //
+        // console.log(person.sayHello());
 
     /** TODO:
      * HEB has an offer for the shoppers that buy products amounting to
@@ -36,11 +52,31 @@
      * and console.log the relevant messages for each person
      */
 
-    // var shoppers = [
-    //     {name: 'Cameron', amount: 180},
-    //     {name: 'Ryan', amount: 250},
-    //     {name: 'George', amount: 320}
-    // ];
+    var shoppers = [
+        {name: 'Cameron', amount: 180},
+        {name: 'Ryan', amount: 250},
+        {name: 'George', amount: 320}
+    ];
+
+    shoppers.forEach(function(shopper){
+        if(shopper.amount > 200){
+            var discount = shopper.amount * .12;
+            var newTotal = shopper.amount - discount;
+            console.log(shopper.name);
+            console.log('Original Total: $' + (shopper.amount).toFixed(2));
+            console.log('Discount: $' + (discount).toFixed(2));
+            console.log('New Total: $' + (newTotal).toFixed(2));
+        } else {
+            console.log(shopper.name);
+            console.log('Original Total: $' + (shopper.amount).toFixed(2));
+            console.log('Sorry, you do not qualify for a discount today!');
+        }
+        console.log('***********************************************')
+    });
+
+
+
+
 
     /** TODO:
      * Create an array of objects that represent books and store it in a
@@ -54,6 +90,50 @@
      * > console.log(books[0].author.firstName) // "Douglas"
      * > console.log(books[0].author.lastName) // "Adams"
      */
+
+
+    var books = [
+        {
+            title: 'The Da Vinci Code',
+            author: {
+                firstName: 'Dan',
+                lastName: 'Brown'
+            }
+        },
+        {
+            title: 'Harry Potter and the Deathly Hallows',
+            author: {
+                firstName: 'J.K.',
+                lastName: 'Rowling'
+            }
+        },
+        {
+            title: 'Harry Potter and the Philosopher\'s Stone',
+            author: {
+                firstName: 'J.K.',
+                lastName: 'Rowling'
+            }
+        },
+        {
+            title: 'Harry Potter and the Order of the Phoenix',
+            author: {
+                firstName: 'J.K.',
+                lastName: 'Rowling'
+            }
+        },
+        {
+            title: 'Fifty Shades of Grey',
+            author: {
+                firstName: 'E.L.',
+                lastName: 'James'
+            }
+        },
+
+    ];
+
+    console.log(books[1].title)
+    console.log(books[1].author.firstName)
+    console.log(books[1].author.lastName)
 
     /**
      * TODO:
@@ -80,6 +160,24 @@
      *      ...
      */
 
+
+    // for(var i = 0; i < books.length; i++){
+    //     console.log('====================');
+    //     console.log('Book # ' + [i]);
+    //     console.log('Title: ' + books[i].title);
+    //     console.log('Author: ' + books[i].author.firstName + books[i].author.lastName);
+    //     console.log('====================');
+    // }
+
+    books.forEach(function(book, index){
+        console.log('====================');
+        console.log('Book # ' + (index + 1));
+        console.log('Title: ' + book.title);
+        console.log('Author: ' + book.author.firstName + ' ' + book.author.lastName);
+        console.log('====================');
+    });
+
+
     /**
      * Bonus:
      * - Create a function named `createBook` that accepts a title and author
@@ -91,4 +189,22 @@
      *   `showBookInfo` function.
      */
 
+    books.createBook = function(){
+        var newBook = {
+            title: prompt('Please enter the title of the book.'),
+            author: {
+                firstName: prompt('Please enter the First Name of the Author.'),
+                lastName: prompt('Please enter the Last Name of the Author.')
+            }
+        };
+        books.push(newBook);
+    }
+    console.log(books.createBook());
+
 })();
+
+// person.sayHello = function(){
+//     return ('Hello ' + this.firstName + ' ' + this.lastName);
+// }
+//
+// console.log(person.sayHello());
