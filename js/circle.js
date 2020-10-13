@@ -29,7 +29,7 @@
 
     console.log("=======================================================");
     // TODO: Change the radius of the circle to 5.
-    circle.radius = 5;
+    circle.radius = 12;
     // log info about the circle
     console.log("Raw circle information");
     circle.logInfo(false);
