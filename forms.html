@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register With Us</title>
+</head>
+<body>
+    <form method="post" action="https://request-inspector.glitch.me/">
+        <p>
+            <label for="email">Email:</label>
+            <input type="text" id="email" name="email" placeholder="Enter your email address">
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+        </p>
+        <p>
+            <article><label for="bio">Bio:</label></article>
+            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        </p>
+        <hr>
+        <section>
+            <p><em>How did you hear about us?</em></p>
+            <p>
+                <input type="checkbox" name="question" id="billboard">
+                <label for="billboard">Billboard</label><br>
+                <input type="checkbox" name="question" id="radioAd">
+                <label for="radioAd">Radio Advertisement</label><br>
+                <input type="checkbox" name="question" id="internetAd">
+                <label for="internetAd">Internet Advertisement</label><br>
+                <input type="checkbox" name="question" id="other">
+                <label for="other">Other</label><br>
+                <textarea name="other" cols="30" rows="5" placeholder="If other, please explain..."></textarea>
+            </p>
+            <p>
+                <article><label for="browser">Select Browser:</label></article>
+                <select name="browser" id="browser">
+                    <option value=""></option>
+                    <option value="internet explorer">Internet Explorer</option>
+                    <option value="google chrome">Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="firefox">Firefox</option>
+                    <option value="opera">Opera</option>
+                </select>
+            </p>
+            <p>
+                <button type="submit">Submit Form</button>
+            </p>
+        </section>
+    </form>
+</body>
+</html>

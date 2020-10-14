@@ -177,14 +177,14 @@ console.log(myMac.currentUser());
 var chooseYourFighter = [
     {
        name:
-    };
+    },
     {
     name:
-    };
+    },
     {
     name:
-    };
+    },
     {
     name:
-    };
+    },
 ];
