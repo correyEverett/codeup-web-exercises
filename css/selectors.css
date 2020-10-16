@@ -14,7 +14,7 @@
 }
 
 /* selector for all "em" elements */
-selector-todo {
+em {
     font-weight: bold;
 }
 
