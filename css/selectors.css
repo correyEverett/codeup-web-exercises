@@ -19,7 +19,7 @@ em {
 }
 
 /* selector for all elements with class="article" */
-selector-todo {
+.article {
     clear:both;
 }
 
