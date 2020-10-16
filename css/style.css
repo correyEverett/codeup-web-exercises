@@ -2,3 +2,16 @@
     color: #333399; /* single line comment */
     text-decoration: underline;
 }
+
+h1.fancy-header {
+    /*text-align: center;*/
+}
+
+h2, h3 {
+    color: #333399;
+    text-decoration: underline;
+}
+
+html {
+    background: #E2E2E2 url("/img/double-bubble.png");
+}
