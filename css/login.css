@@ -38,7 +38,10 @@ fieldset {
 
 .form-group {
     /* This element must use 100% of the width */
+    width: 100%;
     /* It should have a separation of .5em from elements on top of it and below it*/
+    margin-top: .5em;
+    margin-bottom: .5em;
 }
 
 .form-label {
