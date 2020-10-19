@@ -1,0 +1,90 @@
+/*TEXT TRANSFORM AREA*/
+.capital {
+    text-transform:capitalize;
+}
+.upper {
+    text-transform: uppercase;
+}
+.lower {
+    text-transform: lowercase;
+}
+.none {
+    text-transform: none;
+}
+.wide {
+    text-transform: full-width;
+}
+.inherit {
+    text-transform: inherit;
+}
+
+
+
+/*WEB SAFE FONTS*/
+#arial {
+    font-family: Arial;
+}
+#courier-new {
+    font-family: "Courier New";
+}
+#times-new-roman {
+    font-family: "Times New Roman";
+}
+#trebuchet-ms {
+    font-family: "Trebuchet MS";
+}
+#verdana {
+    font-family: Verdana;
+}
+#serif {
+    font-family: Serif;
+}
+#sans-serif {
+    font-family: sans-serif;
+}
+#monospace {
+    font-family: monospace;
+}
+#cursive {
+    font-family: cursive;
+}
+#fantasy {
+    font-family: fantasy;
+}
+
+
+
+
+/*CSS LETTER SPACING*/
+h1 {
+    letter-spacing: .2rem;
+}
+
+h5 {
+    letter-spacing: normal;
+}
+
+h3 {
+    letter-spacing: 1px;
+}
+
+h4 {
+    letter-spacing: -1px;
+}
+
+
+
+
+/*PIXELS EMS REMS*/
+h2  {
+    /*font-size: 20px;*/
+    /*font-size: 20em;*/
+    font-size: 2rem;
+    text-decoration: underline;
+    background-color: steelblue;
+    /*padding: 3px;*/
+    /*padding: 3em;*/
+    /*padding: 3rem;*/
+}
+
+

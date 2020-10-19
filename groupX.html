@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/groupX.css">
+</head>
+<body>
+    <h2>Description</h2>
+    <p>
+        The <strong><em>text-transform</em></strong> property changes the capitalization of text within an element,
+        or else directs the user agent to leave the capitalization "as is."
+    </p>
+    <p>
+        <h3>Possible Values</h3>
+        <ul>
+            <li>capitalize − The first letter of each word in the element's text should be capitalized.</li>
+            <li>uppercase − All of the characters in the element's text should be uppercase (capital letters).</li>
+            <li>lowercase − All of the characters in the element's text should be lowercase.</li>
+            <li>none - The capitalization of the element's text should not be altered.</li>
+            <li>unset - resets a property back to its inherited value, if it naturally inherits from its parents. If  it doesn't, it will reset the property to its initial value</li>
+            <li>revert - takes the value of the property back from its current value to the value it would have had if no changes had been made</li>
+            <li>full-width - is mainly used with East Asian scripts, forces each character to fit inside the same size “square”</li>
+        </ul>
+
+    <main>
+        <h3>Text-Transform</h3>
+        <div>
+            codeup all lowercase
+        </div>
+        <br>
+        <br>
+        <div class="capital">
+            codeup all lowercase, now using text-transform:capitalize
+        </div>
+        <br>
+        <br>
+        <div class="upper">
+            codeup all lowercase, now using text-transform:uppercase
+        </div>
+        <br>
+        <br>
+        <div>
+            CODEUP ALL UPPERCASE
+        </div>
+        <br>
+        <br>
+        <div class="lower">
+            CODEUP ALL UPPERCASE, NOW USING TEXT-TRANSFORM:LOWERCASE
+        </div>
+        <br>
+        <br>
+        <div class="none">
+            COdeUp AlL MesSeD UP, WiTH teXT-TRansForm:none
+        </div>
+        <br>
+        <br>
+        <div class="inherit">
+            Codeup, using text-transform: inherit. <br>Will inherit its case from its parent element (main)
+            <br>If we added a text-transform to the main element, this would inherit the same property.
+        </div>
+    </main>
+
+
+
+
+
+
+    <h2>Description</h2>
+    <p>
+        <strong><em>Web safe fonts</em></strong> are fonts that are included with most operating systems, the implication of such high
+        availability is that a designer can expect typography involving web safe fonts to appear exactly as intended to most users.
+    </p>
+    <p>
+        Web safe fonts are known to be available on nearly all instances of the most used operating systems (Windows, macOS, the most        common Linux distributions, Android, and iOS).
+    </p>
+    <p>
+        CSS defines 5 generic names for fonts. Those are very generic and the exact font face used when using those generic names is up to each browser and can vary for each operating system they are running on. It represents a worst case scenario where the browser will try to do its best to provide at least a font that looks appropriate.
+    </p>
+
+    <h3>Web Safe Fonts</h3>
+    <ul>
+        <li id="arial">Arial</li>
+        <li id="courier-new">Courier New</li>
+        <li id="georgia">Georgia</li>
+        <li id="times-new-roman">Times New Roman</li>
+        <li id="trebuchet-ms">Trebuchet MS</li>
+        <li id="verdana">Verdana</li>
+    </ul>
+
+    <h3>5 Generic CSS Fonts</h3>
+    <ol>
+        <li id="serif">serif</li>
+        <li id="sans-serif">sans-serif</li>
+        <li id="monospace">monospace</li>
+        <li id="cursive">cursive</li>
+        <li id="fantasy">fantasy</li>
+    </ol>
+
+
+
+    <h2>Description</h2>
+    <p>
+        <strong><em>The letter-spacing CSS property</em></strong> sets the horizontal spacing behavior between text characters. This value
+        is added to the natural spacing between characters while rendering the text. Positive values of letter-spacing
+        causes characters to spread farther apart, while negative values of letter-spacing bring characters closer together.
+    </p>
+    <div>
+        <h1>Spacing between letters.</h1>
+        <h3>Spacing between letters.</h3>
+        <h4>Spacing between letters.</h4>
+        <h5>Spacing between letters.</h5>
+    </div>
+
+
+
+
+    <h2>Description</h2>
+    <p><strong><em>Pixels vs Ems vs Rems:</em></strong> pixels are a unit of measurement based on set sizing. they are used for unit
+        measuring screen dimensions - think resolution size. </p>
+
+    <p>em are early css units of measurement. pixels were the "og" go to measurements. they are now
+        becoming more popular because their purpose is to serve as a unit that is relative to font size in specific
+        content and they help with consistency. one em is in a 16-point typeface is 16 points. most browser defaults for an em is 16px.       if you were to change the em to 1.5 it would then equate to 24px. essentially this equates to the percentage of an element           sizing.</p>
+
+    <p>rem stands for "root em". it's used for evenly scaling sizes up and down. say the default sizing is 16px.
+        with a font-size: 2rem, the font is now 32px.</p>
+
+
+
+
+
+
+</body>
+</html>
