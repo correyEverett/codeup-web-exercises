@@ -30,6 +30,10 @@ a {
     color: var(--link-color);
 }
 
+.container {
+    margin-top: 3em;
+}
+
 .top-nav {
     background: var(--light-bg);
     position: fixed;
@@ -63,6 +67,12 @@ a {
     background: var(--light-bg);
     height: 80px;
     position: relative;
+}
+
+.profile-details {
+    float: left;
+    width: calc(25% - 1em);
+    margin: 0 .5em;
 }
 
 .profile-header {
@@ -106,3 +116,44 @@ a {
 .text-muted {
     color: var(--main-link-color);
 }
+
+.timeline {
+    float: left;
+    width: calc(50% - 1em);
+    margin: 0 .5em;
+}
+
+.who-to-follow {
+    float: right;
+    width: calc(25% - 1em);
+    margin: 0 .5em;
+}
+
+.media {
+    width: 100%;
+    background: var(--light-bg);
+    border-bottom: 1px solid var(--separator-color);
+    padding: .5em;
+    overflow: auto;
+}
+
+.media-image {
+    max-width: 50px;
+    margin-top: 1.33em;
+    float: left;
+}
+
+.media-body {
+    width: calc(100% - 50px);
+    float: left;
+}
+
+.profile-entry {
+    /*margin: .5em;*/
+}
+
+.profile-items {
+    padding: 0;
+    text-decoration: none;
+}
+
