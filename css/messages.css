@@ -13,24 +13,67 @@ body, html {
 
 .message {
     width: 80%;
-    margin: 5px auto;
-    border: 1px solid gray;
+    margin: 10px auto;
+    border: 1px solid #D2D2D2;
     border-radius: 5px;
     padding: 10px;
 }
 
 .message-info {
-
+    background: #CDDEFF;
+    color: #291D88;
 }
 
 .message-success {
-
+    background: #CFF3DA;
+    color: #03632C;
 }
 
 .message-warning {
-
+    background: #FCFBC9;
+    color: #826D00;
 }
 
 .message-error {
+    background: #FAD3D7;
+    color: #821731;
+}
 
+
+
+
+/*TEXAS FLAG*/
+
+.stripe {
+    width: 400px;
+    height: 200px;
+    padding-right: 200px;
+}
+
+.blue {
+    width: 200px;
+    height: 400px;
+    float: left;
+    background: #002868;
+    border: 1px solid black;
+}
+
+.off-white {
+    background: #F4F4F4;
+    border: 1px solid black;
+}
+
+.red {
+    background: #BF0A30;
+    border: 1px solid black;
+    border-top: none;
+}
+
+#flag {
+    margin: 200px auto;
+
+}
+
+.star {
+    margin: 125px 20px;
 }

@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+body {
+    width: 80%;
+    font-family: Helvetica;
+    margin: auto;
+}
+
+header {
+    background: #CF4646;
+    height: 500px;
+    width: 100%;
+    color: #FFFFFF;
+}
+
+h1 {
+    font-family: "Apple Chancery";
+    font-size: 8em;
+    padding-top: 1em;
+}
+
+span {
+    font-family: "Courier New";
+}
+
+.btn {
+    background: #CF4646;
+    border-radius: 5px;
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 10px;
+}
