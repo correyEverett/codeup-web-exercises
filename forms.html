@@ -5,22 +5,34 @@
   <title>Register With Us</title>
 </head>
 <body>
-    <form method="post" action="https://request-inspector.glitch.me/">
-        <p>
-            <label for="email">Email:</label>
-            <input type="text" id="email" name="email" placeholder="Enter your email address">
-        </p>
-        <p>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password">
-        </p>
-        <p>
-            <article><label for="bio">Bio:</label></article>
-            <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
-        </p>
+    <form method="get" action="https://hookb.in/Pxq6LwqYOnuLaaWDMEjy">
+        <br>
+        <fieldset>
+            <legend><em>User Login</em></legend>
+            <p>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter email address">
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+            </p>
+        </fieldset>
+        <br>
         <hr>
-        <section>
-            <p><em>How did you hear about us?</em></p>
+        <br>
+        <fieldset>
+            <legend><em>Bio</em></legend>
+            <p>
+                <label for="bio"></label>
+                <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Tell us about you."></textarea>
+            </p>
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+            <legend><em>How did you hear about us?</em></legend>
             <p>
                 <input type="checkbox" name="question" id="billboard">
                 <label for="billboard">Billboard</label><br>
@@ -32,6 +44,12 @@
                 <label for="other">Other</label><br>
                 <textarea name="other" cols="30" rows="5" placeholder="If other, please explain..."></textarea>
             </p>
+        </fieldset>
+        <br>
+        <hr>
+        <br>
+        <fieldset>
+            <legend><em>Browser</em></legend>
             <p>
                 <article><label for="browser">Select Browser:</label></article>
                 <select name="browser" id="browser">
@@ -43,10 +61,10 @@
                     <option value="opera">Opera</option>
                 </select>
             </p>
-            <p>
-                <button type="submit">Submit Form</button>
-            </p>
-        </section>
+        </fieldset>
+        <p>
+            <button type="submit">Submit Form</button>
+        </p>
     </form>
 </body>
 </html>

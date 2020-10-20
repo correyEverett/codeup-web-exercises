@@ -1,0 +1,47 @@
+.fancy-header {
+    color: #FF8983; /* single line comment */
+    text-decoration: underline;
+}
+
+h1.fancy-header {
+    /*text-align: center;*/
+}
+
+h1, h2, h3 {
+    color: #FF8983;
+    text-decoration: underline;
+    font-family: 'Lobster', cursive;
+}
+
+html {
+    background: #E2E2E2;
+    background-image: url("../img/double-bubble.png");
+}
+
+ul {
+    list-style: none;
+}
+
+table, th, tr, td {
+    border: .5px solid #FF8983;
+}
+
+a:link {
+    color:#FF8983;
+}
+
+/* visited link (:visited) */
+a:visited {
+    color:purple;
+}
+
+/* mouse hover over link (:hover) */
+a:hover {
+    color: cadetblue;
+    font-size: 20px;
+}
+
+/* active/selected link (:active) */
+a:active {
+    color: steelblue;
+}
