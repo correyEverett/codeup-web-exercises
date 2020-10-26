@@ -25,10 +25,6 @@ ul {
     justify-content: space-between;
 }
 
-li {
-
-}
-
 .nav-item {
     margin: 1em;
 }
@@ -43,12 +39,16 @@ h5  {
     font-family: 'Montserrat', sans-serif;
 }
 
+a:hover {
+    color: #1969b2;
+}
+
 a {
 
 }
 
-a:hover {
-    color: #1969b2;
+li {
+
 }
 
 
