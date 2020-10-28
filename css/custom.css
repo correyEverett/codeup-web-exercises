@@ -1,0 +1,23 @@
+
+.jumbotron {
+    background-image: url("../img/pizza.png");
+}
+
+h1 {
+    text-align: center;
+    background: #FFFFFF;
+    opacity: .65;
+    width: 100%;
+}
+
+.form-group {
+    padding: 1em;
+}
+
+.form-check-label {
+    padding-left: 1em;
+}
+
+.mar {
+    margin-right: -8px;
+}
