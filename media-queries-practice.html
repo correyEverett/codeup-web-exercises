@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>media queries</title>
+
+<!--    Create an html file called media-queries-practice.html. Include the needed HTML and CSS in style tags to complete the following:-->
+<!--    - h1 with the text ‘Media Queries’ that is text aligned to center for all screen sizes-->
+<!--    - mobile-first view with a blue background for body-->
+<!--    - 768px tablet view with purple background for body-->
+<!--    - 1200px desktop view with yellow background for body-->
+
+</head>
+<body>
+    <h1>Media Queries</h1>
+</body>
+</html>
+
+
+<style>
+
+    * {
+
+    }
+
+    h1 {
+        text-align: center;
+        color: #000000;
+    }
+
+    @media screen and (max-width: 767px) {
+        body {
+            background: #3B94D9;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        body {
+            background: #821731;
+            color: #FFFFFF;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        body {
+            background: gold;
+        }
+    }
+
+</style>
