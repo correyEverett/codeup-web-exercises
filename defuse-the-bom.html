@@ -28,13 +28,15 @@
         detonationTimer--;
     }
     //CALLS updateTimer FUNCTION EVERY SECOND
-    setInterval(updateTimer, interval);
+    var stopBomb = setInterval(updateTimer, interval);
+
 
     // TODO: When this function runs, it needs to
     // cancel the interval/timeout for updateTimer()
     function defuseTheBOM() {
-        clearInterval(updateTimer)
+        clearInterval(stopBomb)
     }
+
 
     // Don't modify anything below this line!
     //
