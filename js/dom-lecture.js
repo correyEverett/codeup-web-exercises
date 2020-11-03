@@ -69,13 +69,13 @@
 //
 // // check if attribute exists
 //     var cowboy = document.getElementById('cowboy');
-    console.log(cowboy.hasAttribute('data-1'));
+//     console.log(cowboy.hasAttribute('data-1'));
 //
 // // get an attribute value
 //     console.log(cowboy.getAttribute('data-1'));
 //
 // // create a new attribute or change a value of an existing attribute
-    cowboy.setAttribute('data-1', 'hello');
+//     cowboy.setAttribute('data-1', 'hello');
     // cowboy.setAttribute('data-test', 'testing');
 //     console.log(cowboy.getAttribute('data-1'));
 //
