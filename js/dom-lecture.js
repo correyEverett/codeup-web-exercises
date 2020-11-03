@@ -1,12 +1,12 @@
 "use strict";
 
-console.log("test");
+// console.log("test");
 
 // ========== Retrieve elements by id, class, tag name
 
 // // id
-    var header = document.getElementById('main-title');
-    console.log(header);
+//     var header = document.getElementById('main-title');
+//     console.log(header);
 
 // // class - will return an HTMLCollection
 //     var cards = document.getElementsByClassName('card');
@@ -69,14 +69,14 @@ console.log("test");
 //
 // // check if attribute exists
 //     var cowboy = document.getElementById('cowboy');
-//     console.log(cowboy.hasAttribute('data-1'));
+    console.log(cowboy.hasAttribute('data-1'));
 //
 // // get an attribute value
 //     console.log(cowboy.getAttribute('data-1'));
 //
 // // create a new attribute or change a value of an existing attribute
-//     cowboy.setAttribute('data-1', 'hello');
-//     cowboy.setAttribute('data-test', 'testing');
+    cowboy.setAttribute('data-1', 'hello');
+    // cowboy.setAttribute('data-test', 'testing');
 //     console.log(cowboy.getAttribute('data-1'));
 //
 // // remove attribute
