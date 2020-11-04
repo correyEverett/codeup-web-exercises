@@ -32,15 +32,17 @@
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
 </ul>
+<button class="on" id="new-sub">ON</button> <button class="off" id="og-sub">OFF</button>
 <h2 id="sub-header">Hello Again.</h2>
+<button class="on" id="mission-accomplished">ON</button> <button class="off" id="og-paragraph">OFF</button>
 <p class="sub-paragraph">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-    aliquip ex ea commodo consequat. Duis aute irure dolor in
-    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-    culpa qui officia deserunt mollit anim id est laborum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br>
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br>
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+    aliquip ex ea commodo consequat. Duis aute irure dolor in <br>
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br>
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <br>
+    culpa qui officia deserunt mollit anim id est laborum. <br>
 </p>
 
 <script>
@@ -51,13 +53,13 @@
             console.log(mainHeader);
 
         // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-            var headerBtnOn = document.getElementById('new-header')
+            var headerBtnOn = document.getElementById('new-header');
             var jsIsCool = function () {
                 mainHeader.innerHTML = 'JavaScript is Cool!';
             }
             headerBtnOn.addEventListener('click', jsIsCool);
 
-            var headerBtnOff = document.getElementById('og-header')
+            var headerBtnOff = document.getElementById('og-header');
             var hWorld = function () {
                 mainHeader.innerHTML = 'Hello World!';
             }
@@ -67,8 +69,20 @@
             var subHeader = document.getElementById('sub-header');
         // console.log(subHeader);
 
+
         // TODO: Set the text color of subHeader to blue
-            subHeader.style.color = 'steelblue';
+            var subBtnOn = document.getElementById('new-sub');
+            var blueHello = function () {
+                subHeader.style.color = 'steelblue';
+            }
+            subBtnOn.addEventListener('click', blueHello)
+
+            var subBtnOff = document.getElementById('og-sub');
+            var blackHello = function () {
+                subHeader.style.color = 'black';
+            }
+            subBtnOff.addEventListener('click', blackHello)
+
 
         // TODO: Uncomment the next line and get all list items
             var listItems = document.getElementsByTagName('li');
@@ -91,7 +105,22 @@
             console.log(subParagraphs);
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-            subParagraphs[0].innerText = 'Mission Accomplished!';
+            var mBtnOn = document.getElementById('mission-accomplished');
+            var missionAccomplished = function () {
+                subParagraphs[0].innerText = 'Mission Accomplished!';
+            }
+            mBtnOn.addEventListener('click', missionAccomplished);
+
+            var mBtnOff = document.getElementById('og-paragraph');
+            var originalParagraph = function () {
+                subParagraphs[0].innerText = lorem;
+            }
+            mBtnOff.addEventListener('click', originalParagraph)
+
+
+
+                var lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\n ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n aliquip ex ea commodo consequat. Duis aute irure dolor in\n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n culpa qui officia deserunt mollit anim id est laborum.'
+
     })();
 </script>
 </body>
