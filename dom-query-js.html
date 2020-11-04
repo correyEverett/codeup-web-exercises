@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DOM: Query and Modify</title>
+    <style>
+        button {
+            color: #FFFFFF;
+            width: 100px;
+            height: 35px;
+            border-radius: 7px;
+        }
+
+        .on {
+            background-color: #1969b2;
+        }
+
+        .off {
+            background-color: darkred;
+        }
+
+    </style>
+</head>
+<body>
+
+<button class="on" id="new-header">ON</button> <button class="off" id="og-header">OFF</button>
+<h1 id="main-header">Hello World!</h1>
+<button class="on" id="new-list">ON</button> <button class="off" id="og-list">OFF</button>
+<ul>
+    <li data-dbid="1">Item 1</li>
+    <li data-dbid="2">Item 2</li>
+    <li data-dbid="3">Item 3</li>
+    <li data-dbid="4">Item 4</li>
+    <li data-dbid="5">Item 5</li>
+</ul>
+<button class="on" id="new-sub">ON</button> <button class="off" id="og-sub">OFF</button>
+<h2 id="sub-header">Hello Again.</h2>
+<button class="on" id="mission-accomplished">ON</button> <button class="off" id="og-paragraph">OFF</button>
+<p class="sub-paragraph">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br>
+    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br>
+    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut <br>
+    aliquip ex ea commodo consequat. Duis aute irure dolor in <br>
+    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla <br>
+    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <br>
+    culpa qui officia deserunt mollit anim id est laborum. <br>
+</p>
+
+<script>
+    (function() {
+        "use strict";
+        // TODO: Uncomment next line and get the main header element by id
+            var mainHeader = document.getElementById('main-header');
+            console.log(mainHeader);
+
+        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+            var headerBtnOn = document.getElementById('new-header');
+            var jsIsCool = function () {
+                mainHeader.innerHTML = 'JavaScript is Cool!';
+            }
+            headerBtnOn.addEventListener('click', jsIsCool);
+
+            var headerBtnOff = document.getElementById('og-header');
+            var hWorld = function () {
+                mainHeader.innerHTML = 'Hello World!';
+            }
+            headerBtnOff.addEventListener("click", hWorld);
+
+        // TODO: Uncomment the next line and get the sub header element by id
+            var subHeader = document.getElementById('sub-header');
+        // console.log(subHeader);
+
+
+        // TODO: Set the text color of subHeader to blue
+            var subBtnOn = document.getElementById('new-sub');
+            var blueHello = function () {
+                subHeader.style.color = 'steelblue';
+            }
+            subBtnOn.addEventListener('click', blueHello)
+
+            var subBtnOff = document.getElementById('og-sub');
+            var blackHello = function () {
+                subHeader.style.color = 'black';
+            }
+            subBtnOff.addEventListener('click', blackHello)
+
+
+        // TODO: Uncomment the next line and get all list items
+            var listItems = document.getElementsByTagName('li');
+            // console.log(listItems);
+
+        // TODO: Set text color on every other list item to grey
+        // TODO: Set text color of li with dbid = 1 to blue
+            var listStyleOn = document.getElementById('new-list');
+            var styledList = function () {
+                for (var i = 0; i < listItems.length; i++) {
+                    if (listItems[i].getAttribute('data-dbid') === '1') {
+                        listItems[i].style.color = 'blue';
+                        continue;
+                    }
+                    if (i % 2 !== 0) {
+                        listItems[i].style.color = 'steelblue';
+                    }
+                }
+            }
+            listStyleOn.addEventListener('click', styledList);
+
+            var listStyleOff = document.getElementById('og-list');
+            var unstyledList = function () {
+                listItems.style.color = 'black';
+            }
+            listStyleOff.addEventListener("click", unstyledList)
+
+        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+            var subParagraphs = document.getElementsByClassName('sub-paragraph');
+            console.log(subParagraphs);
+
+        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+            var mBtnOn = document.getElementById('mission-accomplished');
+            var missionAccomplished = function () {
+                subParagraphs[0].innerText = 'Mission Accomplished!';
+            }
+            mBtnOn.addEventListener('click', missionAccomplished);
+
+            var mBtnOff = document.getElementById('og-paragraph');
+            var originalParagraph = function () {
+                subParagraphs[0].innerText = lorem;
+            }
+            mBtnOff.addEventListener('click', originalParagraph)
+
+
+
+                var lorem = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do\n eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim\n ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut\n aliquip ex ea commodo consequat. Duis aute irure dolor in\n reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla\n pariatur. Excepteur sint occaecat cupidatat non proident, sunt in\n culpa qui officia deserunt mollit anim id est laborum.'
+
+    })();
+</script>
+</body>
+</html>
