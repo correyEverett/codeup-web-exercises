@@ -25,6 +25,7 @@
 
 <button class="on" id="new-header">ON</button> <button class="off" id="og-header">OFF</button>
 <h1 id="main-header">Hello World!</h1>
+<button class="on" id="new-list">ON</button> <button class="off" id="og-list">OFF</button>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
@@ -90,15 +91,25 @@
 
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
-        for (var i = 0; i < listItems.length; i++) {
-            if (listItems[i].getAttribute('data-dbid') === '1') {
-                listItems[i].style.color = 'blue';
-                continue;
-            }
-            if (i % 2 !== 0) {
-                    listItems[i].style.color = 'steelblue';
+            var listStyleOn = document.getElementById('new-list');
+            var styledList = function () {
+                for (var i = 0; i < listItems.length; i++) {
+                    if (listItems[i].getAttribute('data-dbid') === '1') {
+                        listItems[i].style.color = 'blue';
+                        continue;
+                    }
+                    if (i % 2 !== 0) {
+                        listItems[i].style.color = 'steelblue';
+                    }
                 }
-        }
+            }
+            listStyleOn.addEventListener('click', styledList);
+
+            var listStyleOff = document.getElementById('og-list');
+            var unstyledList = function () {
+                listItems.style.color = 'black';
+            }
+            listStyleOff.addEventListener("click", unstyledList)
 
         // TODO: Uncomment the next line and get all elements with class name sub-paragraph
             var subParagraphs = document.getElementsByClassName('sub-paragraph');
