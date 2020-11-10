@@ -1,0 +1,72 @@
+================================= JQUERY INTRO 
+
+jQuery Resources:
+
+  jQuery Documentation ----- api.jquery.com
+  Learning jQuery ---------- learn.jquery.com
+  jQuery Cheat Sheet ------- https://oscarotero.com/jquery/
+  jQuery CDN links --------- http://code.jquery.com/
+
+-- jQuery Defined --
+
+  jQuery - one of the most widely used JS libraries
+
+  Offers simpler syntax to...
+    1) navigate a document
+    2) select DOM elements
+    3) handle events
+    4) create animations
+    5) make AJAX requests
+    6) add and create plugins
+    7) create cross-browser-supported functionality
+
+  Library vs. Framework
+    Library = a bag of tools you can use in your application 
+    Framework = a suite of tools to build the entire application (like a workshop)
+
+
+
+-- Waning Popularity --
+
+  jQuery is not the cool kid on the block anymore
+  Still used widely in web development
+
+
+
+-- Getting jQuery --
+
+    Download: https://code.jquery.com/
+    Use: Version 2.2.4. uncompressed (use minified for production)
+
+    CDN: link in curriculum
+
+
+
+-- jQuery Object --
+
+    "$" = alias for "jQuery"
+
+    $() function
+
+
+
+-- $(document).ready() --
+
+    - keeps code from being executed until the DOM is loaded but before images are finished downloading
+    - protects our code in place of an IIFE
+
+
+
+-- Curriculum Code Examples (assume the inclusion of jQuery) --
+
+  // Changing text/html
+
+  document.getElementByTagName("element")[0].innerHTML = "Hello World";
+    vs. 
+  $("element").html("Hello World"); 
+
+  // Changing CSS styling
+
+  document.getElementByTagName("element")[0].style.color = "blue";
+    vs. 
+  $("element").css("color", "blue"); 
