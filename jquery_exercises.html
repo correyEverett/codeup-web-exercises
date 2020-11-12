@@ -105,30 +105,31 @@
 
 
 
-            // $li.hover(() => {
-            //     $(this).css('color', 'red');
-            // },() => {
-            //     $(this).css('color', 'black');
-            // });
 
             let $h1 = $('h1');
             let $p = $('p');
             let $li = $('li');
 
 
-            $h1.click(() => {
-                $h1.css('background-color', 'yellow');
+            $h1.click((e) => {
+                $(e.currentTarget).css('background-color', 'yellow');
             });
 
-            $p.click(() => {
-                $p.css('font-size', '18px');
+            $p.click((e) => {
+                $(e.currentTarget).css('font-size', '18px');
             });
 
-            $li.hover(function () {
-                $(this).css('color', 'red');
-            },function () {
-                $(this).css('color', 'black');
+            $li.hover((e) => {
+                $(e.currentTarget).css('color', 'red');
+            },(e) => {
+                $(e.currentTarget).css('color', 'black');
             });
+
+            // $li.hover(function () {
+            //     $(this).css('color', 'red');
+            // },function () {
+            //     $(this).css('color', 'black');
+            // });
 
 
 
