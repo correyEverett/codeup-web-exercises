@@ -85,18 +85,52 @@
             //    'border': 'solid 1px red'
             // });
 
-            var $listItems = $('li');
-            $listItems.css({
-               'font-size': '20px',
+            // var $listItems = $('li');
+            // $listItems.css({
+            //    'font-size': '20px',
+            // });
+            //
+            // var $highlights = $('h1, p, li');
+            // $highlights.css({
+            //    'background-color': 'yellow',
+            // });
+            //
+            // var $alertBox = $('h1');
+            // alert($alertBox.html());
+
+
+
+
+
+
+
+
+
+            let $h1 = $('h1');
+            let $p = $('p');
+            let $li = $('li');
+
+
+            $h1.click((e) => {
+                $(e.currentTarget).css('background-color', 'yellow');
             });
 
-            var $highlights = $('h1, p, li');
-            $highlights.css({
-               'background-color': 'yellow',
+            $p.click((e) => {
+                $(e.currentTarget).css('font-size', '18px');
             });
 
-            var $alertBox = $('h1');
-            alert($alertBox.html());
+            $li.hover((e) => {
+                $(e.currentTarget).css('color', 'red');
+            },(e) => {
+                $(e.currentTarget).css('color', 'black');
+            });
+
+            // $li.hover(function () {
+            //     $(this).css('color', 'red');
+            // },function () {
+            //     $(this).css('color', 'black');
+            // });
+
 
 
         });
