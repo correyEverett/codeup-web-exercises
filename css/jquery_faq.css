@@ -1,0 +1,16 @@
+
+.invisible {
+    visibility: hidden;
+}
+
+.yellow-background {
+    background-color: gold;
+}
+
+.bolded {
+    font-weight: bold;
+}
+
+.blue-font {
+    color: #3B94D9;
+}
