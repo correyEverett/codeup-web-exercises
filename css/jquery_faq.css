@@ -14,3 +14,12 @@
 .blue-font {
     color: #3B94D9;
 }
+
+ul {
+    display: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
