@@ -40,9 +40,15 @@ $('span').on('click', (e) => {
 
 // EXERCISE 2
 $('h3').on('click', (e) => {
-   // $(e.currentTarget).next().css('display', 'block');
    $(e.currentTarget).next().slideToggle();
 });
+
+// EXERCISE 3
+let $h2Fade = function () {
+ $('h2').fadeIn();
+}
+setTimeout($h2Fade, 8000);
+
 
 
 
