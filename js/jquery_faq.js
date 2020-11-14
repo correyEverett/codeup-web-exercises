@@ -16,26 +16,39 @@ $heavenlyBody.on('mouseover', () => {
 });
 
 
-// MAKES THE LAST LIST ITEM IN EACH LIST HAVE A YELLOW BACKGROUND ON BUTTON CLICK
-$('.btn').on('click', () => {
-    $('ul').each(function (index, element) {
-        $(element).children().last().toggleClass('yellow-background');
-    });
+// // MAKES THE LAST LIST ITEM IN EACH LIST HAVE A YELLOW BACKGROUND ON BUTTON CLICK
+// $('.btn').on('click', () => {
+//     $('ul').each(function (index, element) {
+//         $(element).children().last().toggleClass('yellow-background');
+//     });
+// });
+//
+// //THE LIST TURNS BOLD WHEN THE HEADING IS CLICKED
+// $('h3').on('click', (event) => {
+//     $(event.currentTarget).next().toggleClass('bolded');
+// });
+//
+// //WHEN ANY LIST ITEM IS CLICKED THE FIRST ITEM IN THAT PARTICULAR LIST TURNS BLUE
+// $('li').on('click', (event) => {
+//     $(event.currentTarget).parent().children().first().toggleClass('blue-font');
+// });
+
+// EXERCISE 1
+$('span').on('click', (e) => {
+    $(e.currentTarget).parent().hide();
 });
 
-//THE LIST TURNS BOLD WHEN THE HEADING IS CLICKED
-$('h3').on('click', (event) => {
-    $(event.currentTarget).next().toggleClass('bolded');
+// EXERCISE 2
+$('h3').on('click', (e) => {
+   $(e.currentTarget).next().slideToggle();
 });
 
-//WHEN ANY LIST ITEM IS CLICKED THE FIRST ITEM IN THAT PARTICULAR LIST TURNS BLUE
-$('li').on('click', (event) => {
-    $(event.currentTarget).parent().children().first().toggleClass('blue-font');
-});
+// EXERCISE 3
+let $h2Fade = function () {
+ $('h2').fadeIn();
+}
+setTimeout($h2Fade, 8000);
 
-$('span').on('click', () => {
-
-});
 
 
 
