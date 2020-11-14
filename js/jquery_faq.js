@@ -33,8 +33,8 @@ $('li').on('click', (event) => {
     $(event.currentTarget).parent().children().first().toggleClass('blue-font');
 });
 
-$('span').on('click', () => {
-
+$('span').on('click', (e) => {
+    $(e.currentTarget).parent().hide();
 });
 
 
