@@ -16,22 +16,22 @@
             <th>Categories</th>
         </tr>
     </thead>
-    <tbody id="insertProducts">
-
-    </tbody>
+    <tbody id="insertProducts"></tbody>
 </table>
+
+<button id="refresh-btn">Refresh</button>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
 
-(function() {
+$(document).ready(function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
 
         const updateTable = function () {
 
-            const productsRequest = $.ajax("data/inventory.json");
+            const productsRequest = $.get("data/inventory.json");
 
             productsRequest.done(function (data, status, jqXhr) {
                 console.log(data);
@@ -63,14 +63,10 @@
             });
             $('#insertProducts').html(productsHTML);
         }
-        $('h1').click(updateTable);
+        $('#refresh-btn').click(updateTable);
 
     //       HINT: You will want to target #insertProducts for your new HTML elements
-})();
-
-
-
-
+});
 
 </script>
 

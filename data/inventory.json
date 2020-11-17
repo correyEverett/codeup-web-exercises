@@ -30,5 +30,14 @@
             "tool"
         ],
         "price": 10
-    }
+    }, {
+    "title": "Weed Wacker",
+    "quantity": 5,
+    "categories": [
+        "tool",
+        "gas",
+        "outdoor"
+    ],
+    "price": 200
+}
 ]
