@@ -16,21 +16,62 @@
             <th>Categories</th>
         </tr>
     </thead>
-    <tbody id="insertProducts"></tbody>
+    <tbody id="insertProducts">
+
+    </tbody>
 </table>
 
 <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
 <script>
+
 (function() {
     "use strict";
     // TODO: Create an AJAX GET request for the file under data/inventory.json
 
+        const updateTable = function () {
+
+            const productsRequest = $.ajax("data/inventory.json");
+
+            productsRequest.done(function (data, status, jqXhr) {
+                console.log(data);
+                tableBody (data);
+            });
+
+            productsRequest.fail(function(jqXhr, status, error) {
+                console.log(jqXhr); // jQuery XMLHttpRequest object
+                console.log(status);
+                console.log(error);
+            });
+        }
+
     // TODO: Take the data from inventory.json and append it to the products table
     //       HINT: Your data should come back as a JSON object; use console.log() to inspect
     //             its contents and fields
+
+    function tableBody (products) {
+        let productsHTML = "";
+        products.forEach(function (product) {
+
+                productsHTML += "<tr>";
+                productsHTML += "<td>" + product.title + "</td>";
+                productsHTML += "<td>" + product.quantity +  "</td>";
+                productsHTML += "<td>" + product.price + "</td>";
+                productsHTML += "<td>" + product.categories + "</td>";
+                productsHTML += "</tr>";
+                console.log(productsHTML);
+            });
+            $('#insertProducts').html(productsHTML);
+        }
+        $('h1').click(updateTable);
+
     //       HINT: You will want to target #insertProducts for your new HTML elements
 })();
+
+
+
+
+
 </script>
 
 </body>
