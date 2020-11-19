@@ -52,16 +52,26 @@
                                     <li class="list-group-item"><span>Winds: ${day.wind_speed}</span></li>
                                 </ul>
                             </div>`
+
+                $('.card').each(function (index) {
+                    if (index > 4) {
+                        console.log(index);
+                        $(this).hide();
+                    }
+                });
+
             });
             $('#main').html(daysHTML)
         }
         updateCards();
 
-        $('.card').each(function (index, element) {
-            if (index > 4) {
-                $(this).hide(element);
-            }
-        });
+
+
+
+
+
+
+
 
 
     });
