@@ -37,12 +37,30 @@ const users = [
 ];
 
 
-//TODO Use .filter to create an array of user objects where each user object has at least 3 languages in the languages array.
+//TODO 1. Use .filter to create an array of user objects where each user object has at least 3 languages in the languages array.
 
-const languagesArray = users.filter( (user) => {
+const languagesArray = users.filter((user) => {
     if (user.languages.length > 2) {
         return user;
     }
 });
 
 // console.log(languagesArray);
+
+//TODO 2. Use .map to create an array of strings where each element is a user's email address
+
+const userEmails = users.map((address) => {
+    return address.email;
+});
+
+// console.log(userEmails);
+
+//TODO 3. Use .reduce to get the total years of experience from the list of users. Once you get the total of years you can use the result to calculate the average.
+
+const YearsOfExperience = users.reduce((currentSum, currentUser) => {
+    return (currentSum + currentUser.yearsOfExperience);
+}, 0);
+    let average = YearsOfExperience / users.length;
+
+    console.log(average);
+
