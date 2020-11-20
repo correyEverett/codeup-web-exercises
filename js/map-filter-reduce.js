@@ -62,5 +62,16 @@ const YearsOfExperience = users.reduce((currentSum, currentUser) => {
 }, 0);
     let average = YearsOfExperience / users.length;
 
-    console.log(average);
+    // console.log(average);
+
+//TODO 4. Use .reduce to get the longest email from the list of users.
+
+const emailLength = userEmails.reduce((currentEmail, nextEmail) => {
+    if (nextEmail.length > currentEmail.length) {
+        currentEmail = nextEmail;
+    }
+    return currentEmail;
+}, "");
+
+console.log(emailLength);
 
