@@ -11,6 +11,7 @@
                 exclude: 'minutely,hourly,current,alerts',
                 units: 'imperial'
             }).done(function (data) {
+                //build 'for loop' to limit data to 5 days instead of 8
                 buildHTML(data);
             });
 
