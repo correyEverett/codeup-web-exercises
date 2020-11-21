@@ -73,5 +73,12 @@ const emailLength = userEmails.reduce((currentEmail, nextEmail) => {
     return currentEmail;
 }, "");
 
-console.log(emailLength);
+// console.log(emailLength);
 
+//TODO 5. Use .reduce to get the list of user's names in a single string. Example: Your instructors are: ryan, luis, zach, fernando, justin.
+
+const usersNames = users.reduce((currentName, nextName) => {
+    return ` ${currentName} ${nextName.name},`
+}, "Your instructors are:");
+
+console.log(usersNames);
