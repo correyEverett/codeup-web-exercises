@@ -1,0 +1,57 @@
+================================= PROMISES
+
+-- INTRO
+
+Lesson Learning Objectives...
+
+  Identify the purpose and definition of JavaScript promises
+  Commit to memory how handle promises using correct syntax
+  Commit to memory how to write requests using the Fetch API
+  Write chained promises using some additional reference
+  Explore writing promises, Promise.resolve(), Promise.All() and Promise.Race()
+
+
+Questions to Ask Yourself...
+
+  What are JS promises?
+  Why should I care about JS promises?
+  How do JS promises relate to what I already know?
+  How do I create and use JS promises?
+  How will I likely use promises in the future (what is the real world application)?
+
+
+Why should you care about this topic?
+
+  Web development constantly deals with asynchronous actions...
+    - making a request to a RESTful API
+    - downloading large assets
+    - loading the document
+    - timed actions
+    - reading and writing to files
+    - etc.
+
+  Promises make writing asynchronous code much cleaner!
+
+  Frequently used in other JS libraries
+
+
+What are promises?
+  - a value that represents an asynch action that may be in a pending, fufilled, or rejected state
+  - provides syntax that exposes the returned values when fufilled/rejected
+  - avoids 'callback hell' by using a flatter syntax 
+
+  (SEE SONG EXAMPLE)
+
+
+How does it relate to what I already know?
+
+  the jqXhr object from jQuery AJAX requests
+
+  (SEE JQUERY REFACTOR EXAMPLE)
+
+
+How do I use them?
+
+  Commonly, a special value to be handled (Fetch API)
+
+  It is possible to create your own promises

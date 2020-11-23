@@ -81,4 +81,15 @@ const usersNames = users.reduce((currentName, nextName) => {
     return ` ${currentName} ${nextName.name},`
 }, "Your instructors are:");
 
-console.log(usersNames);
+// console.log(usersNames);
+
+//TODO Bonus. Use .reduce to get the unique list of languages from the list of users.
+
+const allLanguages = users.reduce((accum, {languages}) => {
+    return accum.concat(languages);
+}, []);
+
+const uniqueLanguages = new Set(allLanguages);
+console.log(uniqueLanguages);
+const arrUnique = Array.from(uniqueLanguages);
+console.log(arrUnique);
