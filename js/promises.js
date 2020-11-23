@@ -22,13 +22,17 @@
     //     console.log(`You're input is invalid. Pleae try again!`);
     // });
 
-    fetch('https://api.github.com', {headers: {'Authorization': 'token gitHubKey'}})
+    fetch('https://api.github.com/users/correyEverett/events/public', {headers: {'Authorization': 'gitHubKey'}})
         .then((response) => {
             return response.json();
         })
-        .then((data) => {
-            console.log(data);
+        .then((users) => {
+            console.log(users);
         })
         .catch(() => {
 
         });
+
+    const aPromise = (username) => {
+
+    }
