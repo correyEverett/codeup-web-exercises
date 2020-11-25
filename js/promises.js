@@ -22,17 +22,31 @@
     //     console.log(`You're input is invalid. Pleae try again!`);
     // });
 
-    fetch('https://api.github.com/users/correyEverett/events/public', {headers: {'Authorization': 'gitHubKey'}})
-        .then((response) => {
-            return response.json();
-        })
-        .then((users) => {
-            console.log(users);
-        })
-        .catch(() => {
-
-        });
-
-    const aPromise = (username) => {
-
+function extractDateOfLastPushEvent (events) {
+    for (let event of events) {
+        if (evnet.type === 'PushEvent') {
+            return new Date(event.created_at).toDateString();
+        }
     }
+    return null;
+}
+
+
+
+const aPromise = (username) => {
+    const url = `https://api.github.com/users/${username}/events/public`;
+    const options = {headers: {'Authorization': 'gitHubKey'}};
+
+    return fetch(url, options)
+    .then((response) => {
+        return response.json();
+    })
+    .then((extractDateOfLastPushEvent) => {
+
+    })
+    .catch(() => {
+
+    });
+}
+
+console.log(aPromise('correyEverett'))
