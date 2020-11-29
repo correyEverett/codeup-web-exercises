@@ -62,7 +62,7 @@
                 });
 
             });
-            $('#main').html(daysHTML)
+            $('#main').html(daysHTML);
         }
         updateCards();
 
