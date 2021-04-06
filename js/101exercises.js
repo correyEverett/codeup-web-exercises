@@ -53,3 +53,19 @@ var fruits = ['mango', 'banana', 'guava', 'kiwi', 'strawberry'];
 
 assert(fruits, ["mango", "banana", "guava", "kiwi", "strawberry"], "Exercise 2");
 addToDone("Exercise 2 is correct.");
+
+// Exercise 3
+// Create a variable named vegetables and assign it an array of strings containing the following vegetables.
+// eggplant, broccoli, carrot, cauliflower, and zucchini
+var vegetables = ['eggplant', 'broccoli', 'carrot', 'cauliflower', 'zucchini'];
+
+assert(vegetables, ["eggplant", "broccoli", "carrot", "cauliflower", "zucchini"], "Exercise 3");
+addToDone("Exercise 3 is correct.");
+
+
+// Exercise 4
+// Create a variable named numbers and assign it an array of numbers, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+assert(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "Exercise 4");
+addToDone("Exercise 4 is correct.");
