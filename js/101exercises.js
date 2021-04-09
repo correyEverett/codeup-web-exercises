@@ -69,3 +69,12 @@ var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 assert(numbers, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], "Exercise 4");
 addToDone("Exercise 4 is correct.");
+
+
+// Exercise 5
+// Add the string "tomato" to the end of the fruits array.
+// *Hint* Recommend finding and using a built-in JS operation to add to an array rather than recreating the array.
+fruits.push('tomato');
+
+assert(fruits, ["mango", "banana", "guava", "kiwi", "strawberry", "tomato"], "Exercise 5");
+addToDone("Exercise 5 is correct");
