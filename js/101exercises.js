@@ -104,3 +104,12 @@ vegetables.sort();
 
 assert(vegetables, ['broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 8")
 addToDone("Exercise 8 is correct.")
+
+
+
+// Exercise 9
+// Write the code necessary to sort the fruits in reverse alphabetical order
+fruits.sort().reverse();
+
+assert(fruits, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana'], "Exercise 9")
+addToDone("Exercise 9 is correct.")
