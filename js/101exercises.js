@@ -211,3 +211,30 @@ assert(addOne(0), 1, "Exercise 11");
 assert(addOne(positiveEvenNumber), positiveEvenNumber + 1, "Exercise 11");
 assert(addOne(negativeOddNumber), negativeOddNumber + 1, "Exercise 11");
 addToDone("Exercise 11 is correct.")
+
+
+
+// Exercise 12
+// Write a function definition named isPositive that takes in a number and returns true or false if that number is positive.
+// Think about the definition of a number that is positive.
+// Is 5 positive? Is 0.25 positive? Is 0.00001 positive? Is -0.001 positive?
+// Is zero itself positive? What about infinity? What about negative infinity?
+// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Comparison_Operators for guidance with JS comparison operators.
+function isPositive(number) {
+    if(number > 0) {
+        return true;
+    }
+    return false;
+}
+
+assert(isPositive(0.25), true, "Exercise 12");
+assert(isPositive(0.00001), true, "Exercise 12");
+assert(isPositive(Infinity), true, "Exercise 12");
+assert(isPositive(0), false, "Exercise 12");
+assert(isPositive(-0.001), false, "Exercise 12");
+assert(isPositive(positiveOddNumber), true, "Exercise 12");
+assert(isPositive(positiveEvenNumber), true, "Exercise 12");
+assert(isPositive(negativeOddNumber), false, "Exercise 12");
+assert(isPositive(negativeEvenNumber), false, "Exercise 12");
+assert(isPositive(-Infinity), false, "Exercise 12");
+addToDone("Exercise 12 is correct.")
