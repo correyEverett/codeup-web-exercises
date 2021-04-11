@@ -123,3 +123,91 @@ var fruitsAndVeggies = fruits.sort().reverse().concat(vegetables.sort());
 
 assert(fruitsAndVeggies, ['tomato', 'strawberry', 'mango', 'kiwi', 'guava', 'banana', 'broccoli', 'carrot', 'cauliflower', 'eggplant', 'tomato', 'zucchini'], "Exercise 10")
 addToDone("Exercise 10 is correct")
+
+// This function generates a random number that is both positive and even
+function randomPositiveEvenNumber() {
+    var randomNumber = Math.ceil(Math.random() * 100) + 10;
+    if(randomNumber % 2 !== 0) {
+        return randomPositiveEvenNumber()
+    }
+
+    return randomNumber;
+}
+
+// this function generates a random number that is both positive and odd
+function randomPositiveOddNumber() {
+    var randomNumber = Math.ceil(Math.random() * 100) + 10;
+    if(randomNumber % 2 === 0) {
+        return randomPositiveOddNumber();
+    }
+
+    return randomNumber;
+}
+
+// this function generates a random number that is both negative and even.
+function randomNegativeEvenNumber() {
+    var randomNumber = Math.ceil(Math.random() * -100) - 10;
+    if(randomNumber % 2 === 0) {
+        return randomNumber;
+    }
+
+    return randomNegativeEvenNumber();
+}
+
+// this function generates a random number that is both negative and odd.
+function randomNegativeOddNumber() {
+    var randomNumber = Math.ceil(Math.random() * -100) - 10;
+    if(randomNumber % 2 === 0) {
+        return randomNegativeOddNumber();
+    }
+
+    return randomNumber;
+}
+
+// The next 4 lines create variables that hold these generated random numbers
+var positiveEvenNumber = randomPositiveEvenNumber()
+var positiveOddNumber = randomPositiveOddNumber();
+var negativeEvenNumber = randomNegativeEvenNumber();
+var negativeOddNumber = randomNegativeOddNumber();
+
+// Writing functions
+// See https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Functions for help with writing functions
+// Be sure to return values from your function definitions. The assert statements will call/run your function(s) for you.
+
+
+// Example function defintion:
+// Write a sayHello function that adds the string "Hello, " to the beginning and "!" to the end of any given input.
+function sayHello(name) {
+    return "Hello, " + name + "!";
+}
+
+assert(sayHello("Jane"), "Hello, Jane!");
+assert(sayHello("Pat"), "Hello, Pat!");
+assert(sayHello("Astrud"), "Hello, Astrud!");
+assert(sayHello("June"), "Hello, June!");
+assert(sayHello("World"), "Hello, World!");
+
+
+// Heres another example function definition
+// This plusTwo function takes in a variable and adds the number 2 to it.
+function plusTwo(x) {
+    return x + 2;
+}
+
+assert(plusTwo(3), 5, "3 plus 2 is five")
+assert(plusTwo(-2), 0, "-2 plus 2 is zero")
+assert(plusTwo(0), 2, "zero plus 2 is two")
+
+
+
+// Exercise 11
+// Write a function definition for a function named addOne that takes in a number and returns that number plus one
+function addOne(number) {
+    return number + 1;
+}
+
+assert(addOne(2), 3, "Exercise 11");
+assert(addOne(0), 1, "Exercise 11");
+assert(addOne(positiveEvenNumber), positiveEvenNumber + 1, "Exercise 11");
+assert(addOne(negativeOddNumber), negativeOddNumber + 1, "Exercise 11");
+addToDone("Exercise 11 is correct.")
