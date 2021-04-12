@@ -238,3 +238,20 @@ assert(isPositive(negativeOddNumber), false, "Exercise 12");
 assert(isPositive(negativeEvenNumber), false, "Exercise 12");
 assert(isPositive(-Infinity), false, "Exercise 12");
 addToDone("Exercise 12 is correct.")
+
+
+// Exercise 13
+// Write a function definition named isNegative that takes in a number and returns true or False if that number is negative.
+function isNegative(number) {
+    if(number < 0) {
+        return true;
+    }
+    return false;
+}
+
+
+assert(isNegative(positiveOddNumber), false, "Exercise 13");
+assert(isNegative(positiveEvenNumber), false, "Exercise 13");
+assert(isNegative(negativeOddNumber), true, "Exercise 13");
+assert(isNegative(negativeEvenNumber), true, "Exercise 13");
+addToDone("Exercise 13 is correct.")
