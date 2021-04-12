@@ -255,3 +255,20 @@ assert(isNegative(positiveEvenNumber), false, "Exercise 13");
 assert(isNegative(negativeOddNumber), true, "Exercise 13");
 assert(isNegative(negativeEvenNumber), true, "Exercise 13");
 addToDone("Exercise 13 is correct.")
+
+
+// Exercise 14
+// Write a function definition named isOdd that takes in a number and returns true or false if that number is odd.
+function isOdd(number) {
+    if(number % 2 !== 0) {
+        return true;
+    }
+    return false;
+}
+
+assert(isOdd(positiveOddNumber), true, "Exercise 14");
+assert(isOdd(positiveEvenNumber), false, "Exercise 14");
+assert(isOdd(negativeOddNumber), true, "Exercise 14");
+assert(isOdd(negativeEvenNumber), false, "Exercise 14");
+addToDone("Exercise 14 is correct.")
+
