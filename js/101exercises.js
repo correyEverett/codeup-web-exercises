@@ -287,3 +287,18 @@ assert(isEven(positiveEvenNumber), true, "Exercise 15");
 assert(isEven(negativeOddNumber), false, "Exercise 15");
 assert(isEven(negativeEvenNumber), true, "Exercise 15");
 addToDone("Exercise 15 is correct.")
+
+
+// Exercise 16
+// Write a function definition named identity that takes in any input and returns that input. Don't overthink this one!
+function identity(input) {
+    return input;
+}
+
+assert(identity(fruits), fruits, "Exercise 16");
+assert(identity(vegetables), vegetables, "Exercise 16");
+assert(identity(positiveOddNumber), positiveOddNumber, "Exercise 16");
+assert(identity(positiveEvenNumber), positiveEvenNumber, "Exercise 16");
+assert(identity(negativeOddNumber), negativeOddNumber, "Exercise 16");
+assert(identity(negativeEvenNumber), negativeEvenNumber, "Exercise 16");
+addToDone("Exercise 16 is correct.")
