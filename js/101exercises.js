@@ -319,3 +319,20 @@ assert(isPositiveOdd(positiveEvenNumber), false, "Exercise 17");
 assert(isPositiveOdd(negativeOddNumber), false, "Exercise 17");
 assert(isPositiveOdd(negativeEvenNumber), false, "Exercise 17");
 addToDone("Exercise 17 is correct.")
+
+
+// Exercise 18
+// Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
+function isPositiveEven(number) {
+    if(isPositive(number) && isEven(number)) {
+        return true;
+    }
+    return false;
+}
+
+assert(isPositiveEven(4), true, "Exercise 18" );
+assert(isPositiveEven(positiveOddNumber), false, "Exercise 18");
+assert(isPositiveEven(positiveEvenNumber), true, "Exercise 18");
+assert(isPositiveEven(negativeOddNumber), false, "Exercise 18");
+assert(isPositiveEven(negativeEvenNumber), false, "Exercise 18");
+addToDone("Exercise 18 is correct.")
