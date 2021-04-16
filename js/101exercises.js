@@ -374,3 +374,19 @@ assert(half(positiveEvenNumber), positiveEvenNumber / 2, "Exercise 21");
 assert(half(negativeOddNumber), negativeOddNumber / 2, "Exercise 21");
 assert(half(negativeEvenNumber), negativeEvenNumber / 2, "Exercise 21");
 addToDone("Exercise 21 is correct.")
+
+
+
+// Exercise 22
+// Write a function definition named double that takes in a number and returns double the provided number.
+function double(number) {
+    return number * 2;
+}
+
+assert(double(4), 8, "Exercise 22");
+assert(double(5), 10, "Exercise 22");
+assert(double(positiveOddNumber), positiveOddNumber * 2, "Exercise 22");
+assert(double(positiveEvenNumber), positiveEvenNumber * 2, "Exercise 22");
+assert(double(negativeOddNumber), negativeOddNumber * 2, "Exercise 22");
+assert(double(negativeEvenNumber), negativeEvenNumber * 2, "Exercise 22");
+addToDone("Exercise 22 is correct.")
