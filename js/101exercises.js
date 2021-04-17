@@ -406,3 +406,19 @@ assert(triple(positiveEvenNumber), positiveEvenNumber * 3, "Exercise 23");
 assert(triple(negativeOddNumber), negativeOddNumber * 3, "Exercise 23");
 assert(triple(negativeEvenNumber), negativeEvenNumber * 3, "Exercise 23");
 addToDone("Exercise 23 is correct.")
+
+
+
+// Exercise 24
+// Write a function definition named reverseSign that takes in a number and returns the provided number but with the sign reversed.
+function reverseSign(number) {
+    return number * -1;
+}
+
+assert(reverseSign(4), -4, "Exercise 24");
+assert(reverseSign(-5), 5, "Exercise 24");
+assert(reverseSign(positiveOddNumber), positiveOddNumber * -1, "Exercise 24");
+assert(reverseSign(positiveEvenNumber), positiveEvenNumber * -1, "Exercise 24");
+assert(reverseSign(negativeOddNumber), negativeOddNumber * -1, "Exercise 24");
+assert(reverseSign(negativeEvenNumber), negativeEvenNumber * -1, "Exercise 24");
+addToDone("Exercise 24 is correct.")
