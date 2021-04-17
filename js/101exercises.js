@@ -390,3 +390,19 @@ assert(double(positiveEvenNumber), positiveEvenNumber * 2, "Exercise 22");
 assert(double(negativeOddNumber), negativeOddNumber * 2, "Exercise 22");
 assert(double(negativeEvenNumber), negativeEvenNumber * 2, "Exercise 22");
 addToDone("Exercise 22 is correct.")
+
+
+
+// Exercise 23
+// Write a function definition named triple that takes in a number and returns triple the provided number.
+function triple(number) {
+    return number * 3;
+}
+
+assert(triple(4), 12, "Exercise 23");
+assert(triple(5), 15, "Exercise 23");
+assert(triple(positiveOddNumber), positiveOddNumber * 3, "Exercise 23");
+assert(triple(positiveEvenNumber), positiveEvenNumber * 3, "Exercise 23");
+assert(triple(negativeOddNumber), negativeOddNumber * 3, "Exercise 23");
+assert(triple(negativeEvenNumber), negativeEvenNumber * 3, "Exercise 23");
+addToDone("Exercise 23 is correct.")
