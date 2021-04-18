@@ -422,3 +422,19 @@ assert(reverseSign(positiveEvenNumber), positiveEvenNumber * -1, "Exercise 24");
 assert(reverseSign(negativeOddNumber), negativeOddNumber * -1, "Exercise 24");
 assert(reverseSign(negativeEvenNumber), negativeEvenNumber * -1, "Exercise 24");
 addToDone("Exercise 24 is correct.")
+
+
+
+// Exercise 25
+// Write a function definition named absoluteValue that takes in a number and returns the absolute value of the provided number
+function absoluteValue(number) {
+    return Math.abs(number);
+}
+
+assert(absoluteValue(4), 4, "Exercise 25");
+assert(absoluteValue(-5), 5, "Exercise 25");
+assert(absoluteValue(positiveOddNumber), positiveOddNumber, "Exercise 25");
+assert(absoluteValue(positiveEvenNumber), positiveEvenNumber, "Exercise 25");
+assert(absoluteValue(negativeOddNumber), negativeOddNumber * -1, "Exercise 25");
+assert(absoluteValue(negativeEvenNumber), negativeEvenNumber * -1, "Exercise 25");
+addToDone("Exercise 25 is correct.")
