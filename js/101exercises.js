@@ -456,3 +456,22 @@ assert(isMultipleOfThree(9), true, "Exercise 26");
 assert(isMultipleOfThree(4), false, "Exercise 26");
 assert(isMultipleOfThree(10), false, "Exercise 26");
 addToDone("Exercise 26 is correct.")
+
+
+
+
+// Exercise 27
+// Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
+function isMultipleOfFive(number) {
+    if(number % 5 == 0) {
+        return true;
+    }
+    return false;
+}
+
+assert(isMultipleOfFive(3), false, "Exercise 27");
+assert(isMultipleOfFive(15), true, "Exercise 27");
+assert(isMultipleOfFive(9), false, "Exercise 27");
+assert(isMultipleOfFive(4), false, "Exercise 27");
+assert(isMultipleOfFive(10), true, "Exercise 27");
+addToDone("Exercise 27 is correct.")
