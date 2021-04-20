@@ -508,3 +508,16 @@ assert(square(2), 4, "Exercise 29");
 assert(square(9), 81, "Exercise 29");
 assert(square(positiveOddNumber), positiveOddNumber * positiveOddNumber, "Exercise 29");
 addToDone("Exercise 29 is correct.")
+
+
+
+// Exercise 30
+// Write a function definition named add that takes in two numbers and returns the sum.
+function add(num1, num2) {
+    return num1 + num2;
+}
+
+assert(add(3, 2), 5, "Exercise 30");
+assert(add(10, -2), 8, "Exercise 30");
+assert(add(5, 7), 12, "Exercise 30");
+addToDone("Exercise 30 is correct.")
