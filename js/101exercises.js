@@ -493,3 +493,18 @@ assert(isMultipleOfBothThreeAndFive(3), false, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(9), false, "Exercise 28");
 assert(isMultipleOfBothThreeAndFive(4), false, "Exercise 28");
 addToDone("Exercise 28 is correct.")
+
+
+
+
+// Exercise 29
+// Write a function definition named square that takes in a number and returns the number times itself.
+function square(number) {
+    return number * number;
+}
+
+assert(square(3), 9, "Exercise 29");
+assert(square(2), 4, "Exercise 29");
+assert(square(9), 81, "Exercise 29");
+assert(square(positiveOddNumber), positiveOddNumber * positiveOddNumber, "Exercise 29");
+addToDone("Exercise 29 is correct.")
