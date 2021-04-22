@@ -548,3 +548,17 @@ assert(squareRoot(4), 2.0, "Exercise 32");
 assert(squareRoot(64), 8.0, "Exercise 32");
 assert(squareRoot(81), 9.0, "Exercise 32");
 addToDone("Exercise 32 is correct.")
+
+
+
+
+// Exercise 33
+// Write a function definition named subtract that takes in two numbers and returns the first minus the second argument.
+function subtract(first, second) {
+    return first - second;
+}
+
+assert(subtract(8, 6), 2, "Exercise 33");
+assert(subtract(27, 4), 23, "Exercise 33");
+assert(subtract(12, 2), 10, "Exercise 33");
+addToDone("Exercise 33 is correct.")
