@@ -575,3 +575,17 @@ assert(multiply(2, 1), 2, "Exercise 34");
 assert(multiply(3, 5), 15, "Exercise 34");
 assert(multiply(5, 2), 10, "Exercise 34");
 addToDone("Exercise 34 is correct.")
+
+
+
+// Exercise 35
+// Write a function definition named divide that takes in two numbers and returns the first argument divided by the second argument.
+function divide(first, second) {
+    return first / second;
+}
+
+assert(divide(27, 9), 3, "Exercise 35");
+assert(divide(15, 3), 5, "Exercise 35");
+assert(divide(5, 2), 2.5, "Exercise 35");
+assert(divide(10, 2), 5, "Exercise 35");
+addToDone("Exercise 35 is correct.")
