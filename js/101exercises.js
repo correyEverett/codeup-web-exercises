@@ -613,3 +613,16 @@ assert(remainder(3, 3), 0, "Exercise 37");
 assert(remainder(5, 2), 1, "Exercise 37");
 assert(remainder(7, 5), 2, "Exercise 37");
 addToDone("Exercise 37 is correct.")
+
+
+
+// Exercise 38
+// Write a function definition named sumOfSquares that takes in two numbers, squares each number, then returns the sum of both squares.
+function sumOfSquares(first, second) {
+    return square(first) + square(second);
+}
+
+assert(sumOfSquares(3, 2), 13, "Exercise 38");
+assert(sumOfSquares(5, 2), 29, "Exercise 38");
+assert(sumOfSquares(2, 4), 20, "Exercise 38");
+addToDone("Exercise 38 is correct.")
