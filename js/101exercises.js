@@ -626,3 +626,18 @@ assert(sumOfSquares(3, 2), 13, "Exercise 38");
 assert(sumOfSquares(5, 2), 29, "Exercise 38");
 assert(sumOfSquares(2, 4), 20, "Exercise 38");
 addToDone("Exercise 38 is correct.")
+
+
+
+// Exercise 39
+// Write a function definition named timesTwoPlusThree that takes in a number, multiplies it by two, adds 3 and returns the result.
+function timesTwoPlusThree(number) {
+    return (number * 2) + 3;
+}
+
+assert(timesTwoPlusThree(0), 3, "Exercise 39");
+assert(timesTwoPlusThree(1), 5, "Exercise 39");
+assert(timesTwoPlusThree(2), 7, "Exercise 39");
+assert(timesTwoPlusThree(3), 9, "Exercise 39");
+assert(timesTwoPlusThree(5), 13, "Exercise 39");
+addToDone("Exercise 39 is correct.")
