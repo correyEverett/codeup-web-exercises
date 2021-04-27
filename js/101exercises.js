@@ -641,3 +641,16 @@ assert(timesTwoPlusThree(2), 7, "Exercise 39");
 assert(timesTwoPlusThree(3), 9, "Exercise 39");
 assert(timesTwoPlusThree(5), 13, "Exercise 39");
 addToDone("Exercise 39 is correct.")
+
+
+// Exercise 40
+// Write a function definition named areaOfRectangle that takes in two numbers and returns the product.
+function areaOfRectangle(first, second) {
+    return first * second;
+}
+
+assert(areaOfRectangle(1, 3), 3, "Exercise 40");
+assert(areaOfRectangle(5, 2), 10, "Exercise 40");
+assert(areaOfRectangle(2, 7), 14, "Exercise 40");
+assert(areaOfRectangle(5.3, 10.3), 54.59, "Exercise 40");
+addToDone("Exercise 40 is correct.")
