@@ -654,3 +654,16 @@ assert(areaOfRectangle(5, 2), 10, "Exercise 40");
 assert(areaOfRectangle(2, 7), 14, "Exercise 40");
 assert(areaOfRectangle(5.3, 10.3), 54.59, "Exercise 40");
 addToDone("Exercise 40 is correct.")
+
+
+
+// Exercise 41
+// Write a function definition named areaOfCircle that takes in a number representing a circle's radius and returns the area of the circle
+function areaOfCircle(radius) {
+    return Math.PI * (square(radius));
+}
+
+assert(areaOfCircle(3), 28.274333882308138, "Exercise 41");
+assert(areaOfCircle(5), 78.53981633974483, "Exercise 41");
+assert(areaOfCircle(7), 153.93804002589985, "Exercise 41");
+addToDone("Exercise 41 is correct.")
