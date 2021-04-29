@@ -702,3 +702,24 @@ assert(isVowel("banana"), false, "Exercise 43");
 assert(isVowel("Q"), false, "Exercise 43");
 assert(isVowel("y"), false, "Exercise 43");
 addToDone("Exercise 43 is correct.")
+
+
+// Exercise 44
+// Write a function definition named hasVowels that takes in value and returns true if the string contains any vowels.
+function hasVowels(string) {
+    var str = string.toString().toLowerCase();
+    for(var i = 0; i < vowels.length; i++) {
+        for(var j = 0; j < str.length; j++) {
+            if(vowels[i] === str[j]) {
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+assert(hasVowels("banana"), true, "Exercise 44");
+assert(hasVowels("ubuntu"), true, "Exercise 44");
+assert(hasVowels("QQQQ"), false, "Exercise 44");
+assert(hasVowels("wyrd"), false, "Exercise 44");
+addToDone("Exercise 44 is correct.")
