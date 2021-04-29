@@ -679,3 +679,26 @@ assert(circumference(3), 18.84955592153876, "Exercise 42");
 assert(circumference(5), 31.41592653589793, "Exercise 42");
 assert(circumference(7), 43.982297150257104, "Exercise 42");
 addToDone("Exercise 42 is correct.")
+
+
+
+// Exercise 43
+// Write a function definition named isVowel that takes in value and returns true if the value is a, e, i, o, u in upper or lower case.
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+function isVowel(character) {
+    var char = character.toLowerCase();
+    for(var i = 0; i < vowels.length; i++) {
+        if(vowels[i] === char) {
+            return true;
+        }
+    }
+    return false;
+}
+
+assert(isVowel("a"), true, "Exercise 43");
+assert(isVowel("U"), true, "Exercise 43");
+assert(isVowel("banana"), false, "Exercise 43");
+assert(isVowel("Q"), false, "Exercise 43");
+assert(isVowel("y"), false, "Exercise 43");
+addToDone("Exercise 43 is correct.")
