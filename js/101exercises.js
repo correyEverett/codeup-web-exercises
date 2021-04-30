@@ -723,3 +723,25 @@ assert(hasVowels("ubuntu"), true, "Exercise 44");
 assert(hasVowels("QQQQ"), false, "Exercise 44");
 assert(hasVowels("wyrd"), false, "Exercise 44");
 addToDone("Exercise 44 is correct.")
+
+
+// Exercise 45
+// Write a function definition named countVowels that takes in value and returns the count of the nubmer of vowels in a sequence.
+var vowelCount;
+
+function countVowels(string) {
+    vowelCount = 0;
+    for(var i = 0; i < string.length; i++) {
+        if(isVowel(string[i])) {
+            vowelCount++;
+        }
+    }
+    return vowelCount;
+}
+
+assert(countVowels("banana"), 3, "Exercise 45");
+assert(countVowels("ubuntu"), 3, "Exercise 45");
+assert(countVowels("mango"), 2, "Exercise 45");
+assert(countVowels("QQQQ"), 0, "Exercise 45");
+assert(countVowels("wyrd"), 0, "Exercise 45");
+addToDone("Exercise 45 is correct.")
