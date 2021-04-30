@@ -745,3 +745,22 @@ assert(countVowels("mango"), 2, "Exercise 45");
 assert(countVowels("QQQQ"), 0, "Exercise 45");
 assert(countVowels("wyrd"), 0, "Exercise 45");
 addToDone("Exercise 45 is correct.")
+
+
+// Exercise 46
+// Write a function definition named removeVowels that takes in string and returns the string without any vowels
+function removeVowels(string) {
+    var consonant = "";
+    for(var i = 0; i < string.length; i++) {
+        if(!isVowel(string[i])) {
+            consonant = consonant + string[i];
+        }
+    }
+    return consonant;
+}
+
+assert(removeVowels("banana"), "bnn", "Exercise 46");
+assert(removeVowels("ubuntu"), "bnt", "Exercise 46");
+assert(removeVowels("mango"), "mng", "Exercise 46");
+assert(removeVowels("QQQQ"), "QQQQ", "Exercise 46");
+addToDone("Exercise 46 is correct.")
